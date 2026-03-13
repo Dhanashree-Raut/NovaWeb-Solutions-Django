@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+
+<!-- HERO SECTION -->
+
+<section class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+
+        <h1 class="display-4 font-weight-bold" data-aos="fade-up">
+            Building Modern Web Solutions
+        </h1>
+
+        <div class="lead mt-3" data-aos="fade-up" data-aos-delay="200">
+            Helping businesses grow with powerful and scalable web applications.
+        </div>
+
+        <a href="/contact" class="btn btn-primary btn-lg mt-4"
+           data-aos="zoom-in" data-aos-delay="400">
+            Get In Touch
+        </a>
+
+    </div>
+</section>
+
+
+
+<!-- VISION MISSION -->
+
+<section class="section">
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-6" data-aos="fade-right">
+
+                <h3>Our Vision</h3>
+
+                <p>
+                    To empower businesses through innovative and reliable
+                    technology solutions that improve digital experiences.
+                    We aim to create digital platforms that help organizations
+                    grow and compete in the modern online world.
+                </p>
+
+            </div>
+
+            <div class="col-md-6" data-aos="fade-left">
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    Deliver high-quality web applications and services using
+                    modern technologies while maintaining performance,
+                    security, and usability. Our focus is to provide scalable
+                    solutions that meet real business needs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- COMPANY INFO -->
+
+<section class="section bg-light">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6" data-aos="zoom-in">
+
+                <img src="{% static 'images/company.jpg' %}"
+                     class="img-fluid about-img rounded shadow">
+
+            </div>
+
+            <div class="col-md-6" data-aos="fade-left">
+
+                <h2>About NovaWeb Solutions</h2>
+
+                <p>
+                    NovaWeb Solutions is a modern web development company
+                    focused on creating powerful digital experiences.
+                    We specialize in building responsive websites,
+                    scalable web applications, and reliable backend systems.
+                </p>
+
+                <p>
+                    Using technologies such as Django, JavaScript,
+                    WordPress, and modern frameworks, we help businesses
+                    transform their ideas into fully functional digital products.
+                </p>
+
+                <p>
+                    Our goal is to deliver high-performance solutions
+                    that help organizations grow and establish a strong
+                    online presence.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section class="section">
+    <div class="container text-center">
+
+        <h2 class="mb-5">Our Services</h2>
+
+        <div class="row">
+
+            <div class="col-md-4" data-aos="fade-up">
+
+                <div class="card p-4 shadow">
+
+                    <h4>Web Development</h4>
+
+                    <p>
+                        We build responsive, fast, and scalable
+                        websites using modern technologies such
+                        as Django, HTML, CSS, and JavaScript.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="card p-4 shadow">
+
+                    <h4>Backend Development</h4>
+
+                    <p>
+                        Secure backend systems and APIs designed
+                        to handle complex business logic and
+                        database operations efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+
+                <div class="card p-4 shadow">
+
+                    <h4>WordPress Solutions</h4>
+
+                    <p>
+                        Custom WordPress development including
+                        plugin customization, theme design,
+                        and performance optimization.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- CONTACT CTA -->
+
+<section class="section text-center bg-dark text-white" data-aos="fade-up">
+
+    <div class="container">
+
+        <h2>Ready to start your project?</h2>
+
+        <p class="mt-3">
+            Let’s build something amazing together with NovaWeb Solutions.
+        </p>
+
+        <a href="/contact" class="btn btn-light btn-lg mt-3">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
