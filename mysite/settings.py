@@ -27,7 +27,10 @@ SECRET_KEY = 'django-insecure-jlpe+@9s4!&+2m3cqu+kf0!c3o755h-4t^^*pb&)5!p4kp2zuz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+]
 
 
 # Application definition
@@ -117,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 
 STATICFILES_DIRS = [
