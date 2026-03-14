@@ -5,6 +5,21 @@
 <div class="container py-3">
 
     <h2 class="text-center mb-5">Contact Us</h2>
+    {% if messages %}
+
+    {% for message in messages %}
+
+    {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success alert-dismissible fade show auto-close-alert" role="alert">
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+
+    {% endfor %}
+
+    {% endif %}
 
     <div class="row justify-content-center">
 

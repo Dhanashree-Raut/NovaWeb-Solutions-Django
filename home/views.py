@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.contrib import messages
 from home.models import Contact
 
 def default(request):
@@ -44,8 +45,9 @@ def contact(request):
         entry = Contact(name=name , phone =phone , email=email , message=msg)
         entry.save()
         
-        print("DATA IS SAVED")
-        print( name , email  , phone , msg )
+        print("Added Data to database successfully")
+        # print(name, email, phone, msg)
+        messages.success(request, f"Thank you {name} for reaching out! Your message has been received and we will contact you soon.")
         
 
 
